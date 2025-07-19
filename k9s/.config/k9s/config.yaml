@@ -40,8 +40,8 @@ k9s:
   thresholds:
     cpu:
       critical: 90
-      warn: 70
+      warn: 85
     memory:
       critical: 90
-      warn: 70
+      warn: 85
   defaultView: ""
