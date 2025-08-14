@@ -1,2 +1,4 @@
 #/bin/bash
-echo "here it will run Stow..." >>/tmp/message
+mv ~/.bashrc ~/.bashrc.bak
+cd ~/dotfiles
+stow -v 3 -t ~ bash
