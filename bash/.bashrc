@@ -4,6 +4,9 @@ echo -e "Processor Name:\t\t"$(awk -F':' '/^model name/ {print $2}' /proc/cpuinf
 source ~/.local/share/omarchy/default/bash/rc
 export PS1='\u@\h:\w$(git branch 2>/dev/null | grep "^*" | cut -d" " -f2 | sed "s/^/ (/;s/$/)/")\$ '
 
+# sets VIM like command line editing
+set -o vi
+
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="/home/milan/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
