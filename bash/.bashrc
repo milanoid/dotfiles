@@ -23,5 +23,9 @@ set -o vi
 export PATH="/home/milan/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
 
+# kubectl aliases
+alias k='kubectl'
+alias kgp='kubectl get pods'
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 [[ -s "/home/milan/.sdkman/bin/sdkman-init.sh" ]] && source "/home/milan/.sdkman/bin/sdkman-init.sh"
